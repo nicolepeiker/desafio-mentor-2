@@ -25,7 +25,7 @@ header {
   background: #464040;
   height: 70vh;
   width: 80vw;
-  max-width: 940px;
+  max-width: 1100px;
   border-radius: 10px;
   margin: 0 auto;
   display: grid;
@@ -51,10 +51,15 @@ h2 {
   margin: auto 1rem;
 }
 
-.register {
+.register,
+.login {
   top: 0;
-  margin: auto 1rem;
+  margin: auto;
   box-sizing: border-box;
+}
+
+.login {
+  width: 60%;
 }
 
 form input,
@@ -124,17 +129,19 @@ form input:not(#check) {
 
 .cookies {
   width: 100vw;
+  height: 4rem;
   background: #ebebeb;
   position: absolute;
   bottom: 0;
   color: #505050;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
   display: flex;
   justify-content: center;
 }
 
 .cookies-info {
-  max-width: 940px;
+  max-width: 1100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,7 +153,8 @@ form input:not(#check) {
 
 .cookies-btn {
   margin: 0 auto;
-  width: 90px;
+  width: 60px;
+  height: 30px;
   cursor: pointer;
 }
 
@@ -194,14 +202,15 @@ form input:not(#check) {
 
 .modal {
   background: #fff;
-  width: 40%;
-  height: 40%;
+  width: 40rem;
+  height: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #505050;
-  padding: 1rem;
+  padding: 5rem;
+  box-sizing: border-box;
 }
 
 .modal h2 {
